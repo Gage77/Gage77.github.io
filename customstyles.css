@@ -1,0 +1,26 @@
+body {
+	background: url('imgs/backgroundpic.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0% -7%;
+	margin: 0;
+}
+
+.myjumbo {
+	border: 5px solid #b76e79;
+}
+
+.myjumbo h1 {
+	text-align: center;
+}
+
+.myjumbo p {
+	text-align: center;
+}
+
+.nav-border {
+	border-bottom: 5px solid #b76e79;
+}
