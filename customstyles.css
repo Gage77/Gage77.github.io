@@ -1,26 +1,19 @@
+.button-padding {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 body {
-	background: url('imgs/backgroundpic.png');
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: 0% -7%;
-	margin: 0;
+    background-color: #303030;
 }
 
-.myjumbo {
-	border: 5px solid #b76e79;
+.vert-center {
+    text-align: center;
 }
 
-.myjumbo h1 {
-	text-align: center;
-}
-
-.myjumbo p {
-	text-align: center;
-}
-
-.nav-border {
-	border-bottom: 5px solid #b76e79;
+#buttongrp {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
