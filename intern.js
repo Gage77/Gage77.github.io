@@ -1,42 +1,43 @@
+const storageSupported = typeof(Storage) !== "undefined";
+
 window.onload = function() {
-    updateDisplayedPoints();
+    if (storageSupported) {
+        updateDisplayedPoints();
+    } else {
+        alert("Ya dun f'd up. Browser does not support web storage.");
+    }
 };
 
-function incPoints(num) {
-    if (typeof(Storage) !== "undefined") {
+function addPoints(num) {
+    if (storageSupported) {
         if (localStorage.points) {
             localStorage.points = Number(localStorage.points) + num;
         }
         else {
-            localStorage.points = 1;
+            localStorage.points = num;
         }
 
-        console.log(localStorage.points + " Yay mor points nom nom nom");
+        console.log(makeLogMessage(num, localStorage.points));
+
         updateDisplayedPoints()
-    }
-    else {
-        alert("Ya dun f'd up. Browser does not support web storage.");
+    } else {
+        alert("Yer browser still don't support web storage, ya dink.")
     }
 }
 
-function decPoints(num) {
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.points) {
-            localStorage.points = Number(localStorage.points) - num;
-        }
-        else {
-            localStorage.points = -1;
-        }
-
-        console.log(localStorage.points + " Aww less points, sad face");
-        updateDisplayedPoints()
+function makeLogMessage(num, currentPoints) {
+    let message;
+    if (num > 0) {
+        message = "Yay mor points nom nom nom";
+    } else if (num < 0) {
+        message = "Aww less points, sad face";
+    } else {
+        message = "Points be the same, boss";
     }
-    else {
-        alert("Ya dun f'd up. Browser does not support web storage.");
-    }
+    return `${currentPoints} ${message}`;
 }
 
 function updateDisplayedPoints() {
     var pnts = document.getElementById("current_points");
-    pnts.innerHTML = localStorage.points;
+    pnts.innerHTML = localStorage.points || '0';
 }
