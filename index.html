@@ -7,18 +7,20 @@
 	<link rel="stylesheet" type="text/css" href="customstyles.css">
 </head>
 <body>
-
 	<div class="container">
 		<div class="jumbotron vertical-center">
 			<h1 class="vert-center">Current Intern Points</h1>
 			<h1 id="current_points" class="vert-center" value="0">Show me tha moneeeeey!</h1>
 			<div id="buttongrp">
 				<span>
-					<button type="button" class="btn btn-danger btn-lg button-padding" onclick="decPoints()">-1 Point (Aww)</button>
-					<button type="button" class="btn btn-success btn-lg button-padding" onclick="incPoints()">+1 Point (Yay!)</button>
+					<button type="button" class="btn btn-danger btn-md button-padding" onclick="decPoints(100)">-100 Point (Aww)</button>
+					<button type="button" class="btn btn-danger btn-md button-padding" onclick="decPoints(10)">-10 Point (Aww)</button>
+					<button type="button" class="btn btn-danger btn-md button-padding" onclick="decPoints(1)">-1 Point (Aww)</button>
+					<button type="button" class="btn btn-success btn-md button-padding" onclick="incPoints(1)">+1 Point (Yay!)</button>
+					<button type="button" class="btn btn-success btn-md button-padding" onclick="incPoints(10)">+10 Point (Yay!)</button>
+					<button type="button" class="btn btn-success btn-md button-padding" onclick="incPoints(100)">+100 Point (Yay!)</button>
 				</span>
 			</div>
-
 		</div>
 
 		<div id="celebrate" class="move-object">

@@ -2,10 +2,10 @@ window.onload = function() {
     updateDisplayedPoints();
 };
 
-function incPoints() {
+function incPoints(num) {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.points) {
-            localStorage.points = Number(localStorage.points) + 1;
+            localStorage.points = Number(localStorage.points) + num;
         }
         else {
             localStorage.points = 1;
@@ -19,10 +19,10 @@ function incPoints() {
     }
 }
 
-function decPoints() {
+function decPoints(num) {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.points) {
-            localStorage.points = Number(localStorage.points) - 1;
+            localStorage.points = Number(localStorage.points) - num;
         }
         else {
             localStorage.points = -1;
