@@ -6,7 +6,6 @@ window.onload = function() {
     } else {
         alert("Ya dun f'd up. Browser does not support web storage.");
     }
-    erodePoints();
 };
 
 function addPoints(num) {
@@ -41,15 +40,4 @@ function makeLogMessage(num, currentPoints) {
 function updateDisplayedPoints() {
     var pnts = document.getElementById("current_points");
     pnts.innerHTML = localStorage.points || '0';
-}
-
-function randomIntFromInterval(min,max) {
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-function erodePoints() {
-    setTimeout(function() {
-        addPoints(randomIntFromInterval(1, 10));
-        erodePoints();
-    }, randomIntFromInterval(30e3, 500e3));
 }
