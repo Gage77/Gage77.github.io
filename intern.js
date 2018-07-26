@@ -6,7 +6,7 @@ window.onload = function() {
     } else {
         alert("Ya dun f'd up. Browser does not support web storage.");
     }
-    erodePoints();
+    improveMoral();
 };
 
 function addPoints(num) {
@@ -47,9 +47,9 @@ function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-function erodePoints() {
+function improveMoral() {
     setTimeout(function() {
         addPoints(randomIntFromInterval(1, 10));
-        erodePoints();
+        improveMoral();
     }, randomIntFromInterval(30e3, 500e3));
 }
