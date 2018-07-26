@@ -49,7 +49,7 @@ function randomIntFromInterval(min,max) {
 
 function erodePoints() {
     setTimeout(function() {
-        addPoints(-randomIntFromInterval(1, 10));
+        addPoints(randomIntFromInterval(1, 10));
         erodePoints();
     }, randomIntFromInterval(30e3, 500e3));
 }
