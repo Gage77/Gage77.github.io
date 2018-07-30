@@ -6,5 +6,8 @@ This website will serve as a means of testing out new ideas and concepts that co
 
 ## Currently Active:
 
+### Home Page:
+Information about myself, as well as some social media stuff.
+
 ### Intern-o-Matic 3000
 This was created as a test of bootstrap and to amuse my coworkers during my internship at Alkami Technologies. It utilizes localStorage rather than a database, so the points listed are based on the local machine that is running them.
