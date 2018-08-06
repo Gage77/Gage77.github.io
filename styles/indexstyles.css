@@ -18,6 +18,18 @@ body {
     text-align: center;
 }
 
+#social-medias a {
+    background-color: transparent;
+    border: none;
+}
+
+#social-medias img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #main-container {
     border-radius: 25px;
 }
