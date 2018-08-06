@@ -6,6 +6,7 @@
 body {
     background-color: #2E4A62;
     color: white;
+    padding-top: 70px;
 }
 
 .vert-center {
@@ -22,6 +23,7 @@ body {
 #prof-pic {
     height: 420px;
     width: 235px;
+    float: left;
 }
 
 #twitter-feed {
@@ -29,4 +31,8 @@ body {
     max-width: 320px;
     padding: 20px;
     border-radius: 3px;
+}
+
+#about-me-text {
+    padding-left: 250px;
 }
