@@ -4,13 +4,26 @@
 }
 
 body {
-    background-color: #2E4A62;
     color: white;
-    padding-top: 70px;
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.container {
+    background-color: #2E4A62;
 }
 
 .vert-center {
     text-align: center;
+}
+
+#main-container {
+    border-radius: 25px;
+}
+
+#name-card {
+    text-align: center;
+    font-size: 600%
 }
 
 #buttongrp {
@@ -21,15 +34,18 @@ body {
 }
 
 #prof-pic {
-    height: 420px;
-    width: 235px;
-    float: left;
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    border-radius: 20px;
 }
 
 #twitter-feed {
     max-height: 5000px;
     max-width: 320px;
     padding: 20px;
+    float: right;
     border-radius: 3px;
 }
 
