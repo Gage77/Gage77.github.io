@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../styles/blanketstyles.css">
+        <link rel="stylesheet" type="text/css" href="../styles/whiskey.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">H|B</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li id="home"><a href="../index.html">Home </a></li>
+                        <li id="whiskey"><a href="whiskey.html">Whiskey Cork </a></li>
+                        <li id="intern"><a href="intern.html">Intern-o-Matic </a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Bootstrap javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="../scripts/blanket.js"></script> 
+        <!-- Change active nav bar link to current -->
+        <script>
+            $(document).ready(function() {
+                $(".nav li").removeClass("active");
+                $("#whiskey").addClass("active");
+            });
+        </script>   
+    </body>
+</html>
