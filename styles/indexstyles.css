@@ -1,3 +1,7 @@
+/*---------------------------------------*/
+/*--------------- Classes ---------------*/
+/*---------------------------------------*/
+
 .button-padding {
     margin-left: 5px;
     margin-right: 5px;
@@ -16,6 +20,10 @@ body {
 .vert-center {
     text-align: center;
 }
+
+/*------------------------------------*/
+/*--------------- Id's ---------------*/
+/*------------------------------------*/
 
 #social-medias a {
     background-color: transparent;
@@ -38,33 +46,24 @@ body {
     font-size: 600%
 }
 
-#buttongrp {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-me img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 #prof-pic {
     height: 30%;
     width: 30%;
     border-radius: 20px;
 }
 
-#twitter-feed {
-    max-height: 5000px;
-    max-width: 320px;
-    padding: 20px;
-    float: right;
-    border-radius: 3px;
+#about-me-text h1 {
+    text-align: center;
+    font-size: 60px;
 }
 
-#about-me-text {
-    padding-left: 250px;
+#about-me-text p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#about-me img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
