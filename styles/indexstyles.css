@@ -1,0 +1,70 @@
+/*---------------------------------------*/
+/*--------------- Classes ---------------*/
+/*---------------------------------------*/
+
+.button-padding {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body {
+    color: white;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.container {
+    background-color: #2E4A62;
+    height: 100%;
+}
+
+.vert-center {
+    text-align: center;
+}
+
+/*------------------------------------*/
+/*--------------- Id's ---------------*/
+/*------------------------------------*/
+
+#social-medias a {
+    background-color: transparent;
+    border: none;
+}
+
+#social-medias img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-container {
+    border-radius: 25px;
+}
+
+#name-card {
+    text-align: center;
+    font-size: 600%
+}
+
+#prof-pic {
+    height: 30%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+#about-me-text h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-me-text p {
+    text-align: left;
+    font-size: 25px;
+}
+
+#about-me img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

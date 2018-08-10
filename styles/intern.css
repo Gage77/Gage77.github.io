@@ -1,0 +1,22 @@
+.jumbotron {
+    color: white;
+    background-color: #2E4A62;
+}
+
+.vert-center {
+    text-align: center;
+}
+
+body {
+    background-color: #2E4A62;
+    padding-top: 70px;
+}
+
+#buttongrp {
+    text-align: center;
+}
+
+#buttongrp button {
+    margin-right: 10px;
+    margin-left: 10px;
+}

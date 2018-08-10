@@ -4,7 +4,7 @@ window.onload = function() {
     if (storageSupported) {
         updateDisplayedPoints();
     } else {
-        alert("Ya dun f'd up. Browser does not support web storage.");
+        alert("Ya dun messed up ya goose. Browser does not support web storage.");
     }
     improveMoral();
 };
