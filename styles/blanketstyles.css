@@ -1,3 +1,11 @@
+/*
+    Colors used: 
+    - Main background grey: #222
+    - Main container background: #2E4A62
+    - Link main: #32AD32
+    - Link hover: #ADDEAD
+*/
+
 body {
     background-color: #222;
     font-family: 'Cabin', sans-serif;
@@ -5,4 +13,13 @@ body {
 
 .navbar-inverse {
     border-color: #222;
+}
+
+a {
+    color: #32AD32;
+}
+
+a:hover {
+    color: #ADDEAD;
+    text-decoration: none;
 }
