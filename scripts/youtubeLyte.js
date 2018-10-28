@@ -29,7 +29,7 @@ function initClient() {
         scope: SCOPES
     }).then(() => {
         // Listen for signin state changes
-        gapi.auth2.getAuthInstance().isSignedIng.listen(updateSigninStatus);
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
         // Handle initial signin state
         updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
         // Handle clicks of login and logout button
