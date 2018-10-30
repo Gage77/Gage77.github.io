@@ -65,23 +65,15 @@ function handleSignoutClick() {
     gapi.auth2.getAuthInstance().signOut();
 }
 
-// Append text to a pre element in the body, adding the given message
-// to a text node in that element. Used to display info from API response.
-function appendPre(message) {
-    var textContent = document.createTextNode(message + '\n');
-    content.appendChild(textContent); 
-}
-
 // Get channel from API
 function getChannel(channel) {
     console.log(channel);
     gapi.client.youtube.channels.list({
-        'part': 'snippet,contentDetails,statistics',
-        'forUsername': 'GoogleDevelopers'
-    }).then(function(response) {
-        var channel = response.result.items[0];
-        appendPre('This channel\'s ID is ' + channel.id + '. ' +
-        'Its title is \'' + channel.snippet.title + ', ' + 
-        'and it has ' + channel.statistics.viewCount + ' views.');
-    });
+        part: 'snippet,contentDetails,statistics',
+        forUsername: channel
+    })
+    .then(response => {
+        console.log(response);
+    })
+    .catch(err => alert('No channel by that name'));
 }
