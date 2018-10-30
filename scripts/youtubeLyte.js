@@ -65,6 +65,13 @@ function handleSignoutClick() {
     gapi.auth2.getAuthInstance().signOut();
 }
 
+// Append text to a pre element in the body, adding the given message
+// to a text node in that element. Used to display info from API response.
+function appendPre(message) {
+    var textContent = document.createTextNode(message + '\n');
+    content.appendChild(textContent); 
+}
+
 // Get channel from API
 function getChannel(channel) {
     console.log(channel);
