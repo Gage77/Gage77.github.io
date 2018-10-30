@@ -1,3 +1,7 @@
 #content, #authorize, #authorize-button, #signout-button {
     display: none;
 }
+
+#authorize-button {
+    margin-top: 60px;
+}

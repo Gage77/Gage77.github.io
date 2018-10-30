@@ -5,51 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blanketstyles.css">
     <link rel="stylesheet" href="../styles/youtubeLyte.css">
-    <script src="../scripts/youtubeLyte.js"></script>
-    <title>YouTube Lyte</title>
+    <title></title>
 </head>
 
 <body>
-    <nav class="black">
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="../index.html">H|B</a>
-                <a href="#!" class="brand-logo">YouTube Lyte</a>
-            </div>
-        </div>
-    </nav>
-
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">H|B</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li id="home"><a href="../index.html">Home </a></li>
+                        <li id="whiskey"><a href="whiskey.html">Whiskey Cork </a></li>
+                        <li id="intern"><a href="intern.html">Intern-o-Matic </a></li>
+                        <li id="youtube"><a href="youtube-lyte.html">YouTube Lyte</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
     <br>
 
     <section>
         <div class="container">
             <p>Log in with Google</p>
-            <button class="btn red" id="authorize-button">Log In</button>
-            <button class="btn red" id="signout-button">Log Out</button>
+            <button class="btn btn-danger" id="authorize-button">Log In</button>
+            <button class="btn btn-danger" id="signout-button">Log Out</button>
             <br>
             <div id="content">
                 <div class="row">
-                    <div class="col s6">
-                        <form id="channel-form col s6">
+                    <div class="col">
+                        <form id="channel-form col">
                             <div class="input-field">
                                 <input type="text" placeholder="Enter Channel Name" id="channel-input">
-                                <input type="submit" value="Get Channel Data" class="btn grey lighten-2">
+                                <input type="submit" value="Get Channel Data" class="btn btn-secondary">
                             </div>
                         </form>
                     </div>
-                    <div id="channel-data" class="col s6"></div>
+                    <div id="channel-data" class="col"></div>
                 </div>
                 <div class="row" id="video-container"></div>
             </div>
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
+    <script src="../scripts/youtubeLyte.js"></script>
 </body>
 </html>
