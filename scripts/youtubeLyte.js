@@ -93,15 +93,38 @@ function getChannel(channel) {
             <ul>
                 <li>Title: ${channel.snippet.title}</li>
                 <li>ID: ${channel.id}</li>
-                <li>Subscribers: ${channel.statistics.subscriberCount}</li>
-                <li>Views: ${channel.statistics.viewCount}</li>
-                <li>Videos: ${channel.statistics.videoCount}</li>
+                <li>Subscribers: ${numberWithCommas(channel.statistics.subscriberCount)}</li>
+                <li>Views: ${numberWithCommas(channel.statistics.viewCount)}</li>
+                <li>Videos: ${numberWithCommas(channel.statistics.videoCount)}</li>
             </ul>
             <p>${channel.snippet.description}</p>
             <hr>
             <a class="btn btn-primary" target="blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
         `;
         showChannelData(output);
+
+        const playlistId = channel.contentDetails.relatedPlaylists.uploads;
+        requestVideoPlaylist(playlistId);
     })
     .catch(err => alert('No channel by that name'));
+}
+
+// Add commas to long numbers
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+// Get the playlist
+function requestVideoPlaylist(id) {
+    const requestOptions = {
+        playlistId: id,
+        part: 'snippet',
+        maxResults: 10
+    }
+
+    const request = gapi.client.youtube.playlistItems.list(requestOptions);
+
+    request.execute(response => {
+        console.log(response);
+    });
 }
