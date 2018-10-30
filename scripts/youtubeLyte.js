@@ -126,5 +126,27 @@ function requestVideoPlaylist(id) {
 
     request.execute(response => {
         console.log(response);
+        const playListItems = response.result.items;
+        if(playListItems) {
+            let output = '<h4 class="text-center">Latest Videos</h4>';
+
+            // loop through playlist and append output
+            playListItems.forEach(item => {
+                const videoId = item.snippet.resourceId.videoId;
+
+                output += `
+                    <div class="col-sm-3">
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                `;
+            });
+
+            // Output videos
+            videoContainer.innerHTML = output;
+        }
+        else {
+            videoContainer.innerHTML = 'No Uploaded videos';
+        }
     });
 }
