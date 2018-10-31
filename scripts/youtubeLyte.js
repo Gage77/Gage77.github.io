@@ -90,7 +90,7 @@ function getChannel(channel) {
         const channel = response.result.items[0];
 
         const output = `
-            <ul class="list-group">
+            <ul class="list-group light-text">
                 <li class="list-group-item">Title: ${channel.snippet.title}</li>
                 <li class="list-group-item">ID: ${channel.id}</li>
                 <li class="list-group-item">Subscribers: ${numberWithCommas(channel.statistics.subscriberCount)}</li>
