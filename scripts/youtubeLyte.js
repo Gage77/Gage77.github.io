@@ -98,7 +98,7 @@ function getChannel(channel) {
                 <li class="list-group-item">Videos: ${numberWithCommas(channel.statistics.videoCount)}</li>
             </ul>
             <p>${channel.snippet.description}</p>
-            <hr>
+            <br>
             <div class="center-block">
                 <a class="btn btn-danger" target="blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
             </div>
