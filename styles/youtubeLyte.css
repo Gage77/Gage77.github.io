@@ -17,3 +17,9 @@
 .light-text {
     color: #000;
 }
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
