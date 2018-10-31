@@ -90,6 +90,9 @@ function getChannel(channel) {
         const channel = response.result.items[0];
 
         const output = `
+            <div class="center-block">
+                <h4>Channel Data</h4>
+            </div>
             <ul class="list-group light-text">
                 <li class="list-group-item"><strong>Title:</strong> ${channel.snippet.title}</li>
                 <li class="list-group-item"><strong>ID:</strong> ${channel.id}</li>
