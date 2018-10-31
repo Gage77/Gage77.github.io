@@ -91,11 +91,11 @@ function getChannel(channel) {
 
         const output = `
             <ul class="list-group light-text">
-                <li class="list-group-item">Title: ${channel.snippet.title}</li>
-                <li class="list-group-item">ID: ${channel.id}</li>
-                <li class="list-group-item">Subscribers: ${numberWithCommas(channel.statistics.subscriberCount)}</li>
-                <li class="list-group-item">Views: ${numberWithCommas(channel.statistics.viewCount)}</li>
-                <li class="list-group-item">Videos: ${numberWithCommas(channel.statistics.videoCount)}</li>
+                <li class="list-group-item"><strong>Title:</strong> ${channel.snippet.title}</li>
+                <li class="list-group-item"><strong>ID:</strong> ${channel.id}</li>
+                <li class="list-group-item"><strong>Subscribers:</strong> ${numberWithCommas(channel.statistics.subscriberCount)}</li>
+                <li class="list-group-item"><strong>Views:</strong> ${numberWithCommas(channel.statistics.viewCount)}</li>
+                <li class="list-group-item"><strong>Videos:</strong> ${numberWithCommas(channel.statistics.videoCount)}</li>
             </ul>
             <p>${channel.snippet.description}</p>
             <br>
