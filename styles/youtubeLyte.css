@@ -8,10 +8,11 @@
 
 #content {
     color: white;
+    margin-top: 70px;
 }
 
-#content {
-    margin-top: 70px;
+#channel-input {
+    color: #000;
 }
 
 .light-text {
